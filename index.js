@@ -91,8 +91,8 @@ app.use(express.json());
 app.use("/api/user", userRoutes);
 
 // Start server
-app.listen(port, () => {
-  console.log(`🚀 Server running at http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`🚀 Server running at http://localhost:${port}`);
+// });
 
 
