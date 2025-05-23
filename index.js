@@ -66,22 +66,17 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // CORS configuration
-// app.use(
-//   cors({
-//     origin: "https://notes-application-liard.vercel.app",
-//     methods: ["GET", "POST", "PUT", "DELETE"],
-//     credentials: true,
-//   })
-// );
-
-
 app.use(
   cors({
-    origin: ["https://notes-ten-chi.vercel.app/", "http://localhost:5173"],
+    origin: ["https://notes-ten-chi.vercel.app", "http://localhost:5173"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
+
+
+
+
 
 
 // Middleware
